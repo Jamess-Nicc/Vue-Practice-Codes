@@ -1,20 +1,34 @@
-<script>
+<script setup>
+import { ref } from 'vue';
 
 /*This script tag contains the component's JavaScript logic.
 within it, we use the data option to define reactive properties.
-we create a data function inside export default to return a name.*/ 
+we create a data function inside export default to return a name.
+It is worth to point out that we are using a short form Composition API 
+for flexibility*/ 
 
-export default {
-  data(){
-    return {
-      name: 'James Nicdao',
-      /*The data below shows the current status of the user in the script. */
-      status: 'active',
-      /*The data below shows the tasks for the user in an array. */
-      tasks: ['Task 1', 'Task 2', 'Task 3'],
-    };
-  },
-};
+/*in the codes below, we use "ref" to create reactive references. These reactive references
+are then used in the template for the output. */
+
+    /*the data below shows the name of the user in the script. */
+    const name = ref('James Nicdao');
+    /*The data below shows the current status of the user in the script. */
+    const status = ref('active');
+    /*The data below shows the tasks for the user in an array. */
+    const tasks = ref(['Task 1', 'Task 2', 'Task 3']);
+
+    /*we use an arrow function to create the toggleStatus function which has the if conditions
+    inside the curly braces. And also, we are using status.value here to make the options reactive.*/
+    
+    const toggleStatus = () => {
+       if (status.value === 'active') {
+          status.value = 'pending';
+        } else if (status.value === 'pending') {
+          status.value = 'inactive';
+        } else {
+          status.value = 'active'; 
+        }
+      };
 </script>
 
 <template>
@@ -39,6 +53,9 @@ export default {
   <h3>Tasks:</h3><br>
   <ul>
     <li v-for="task in tasks" :key="task">{{ task }}</li>
-  </ul>
+  </ul><br>
+  <!--The v-on directive is used to listen for the click event on the button element.
+  In this particular code, we use the v-on directive to call the toggleStatus function when the button is clicked.-->
+  <button v-on:click="toggleStatus">Change Status</button>
 </template>
 
