@@ -1,0 +1,16 @@
+<script setup>
+</script>
+
+<template>
+    <nav class=" w-full bg-gray-900 text-white p-4 flex items-center justify-between">
+        <div class="flex items-center space-x-5">
+            <img :src="logo" alt="Logo" class="h-8 w-8 mr-2" />
+            <span class="font-bold text-lg">My App</span>
+        </div>
+        <ul class="flex space-x-4 p-3">
+            <li><a href="#" class="inline-block transform-transition duration-300 hover:scale-150 hover:bg-gray-800 font-bold">Home</a></li>
+            <li><a href="#" class="inline-block transform-transition duration-300 hover:scale-150 hover:bg-gray-800 font-bold">About</a></li>
+            <li><a href="#" class="inline-block transform-transition duration-300 hover:scale-150 hover:bg-gray-800 font-bold">Contact</a></li>
+        </ul>
+    </nav>
+</template>
