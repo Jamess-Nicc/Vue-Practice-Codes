@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "title" : "Senior Vue Developer",
+        "description" : "We are seeking a talented Front-End Developer to join our team \n in Quezon City, Philippines!\n The ideal candidate will have stong skils in HTML, CSS, and JavaScript, with experience working with modern JavaScript frameworkds such as Vue or Angular",
+        "location" : "Quezon City, Philippines",
+        "salary" :  "35-50k pesos/month",
+        "company" : {
+            "name" : "SampleBusiness Softwares",
+            "description" : "A software development startup founded and based in the Philippines.",
+            "contactEmail" : "SampleBusinessContact@gmail.com",
+            "contactNumber" : "0912-345-6789"
+        }
+    },
+    {
+
+        "id": 2,
+        "title" : "Junior Vue Developer",
+        "description" : "We are seeking a talented Junior Front-End Developer to join our team \n in Pasig City, Philippines!\n The ideal candidate will have stong skils in HTML, CSS, and JavaScript",
+        "location" : "Pasig, Philippines",
+        "salary" :  "18-20k pesos/month",
+        "company" : {
+            "name" : "SampleBusiness Softwares",
+            "description" : "A software development startup founded and based in the Philippines.",
+            "contactEmail" : "SampleBusinessContact@gmail.com",
+            "contactNumber" : "0912-345-6789"
+        }
+    },
+
+    {
+         "id": 3,
+        "title" : "Full Stack Vue Developer",
+        "description" : "We are looking for an experienced Full Stack Developer to join our team \n in San Jose Del Monte Bulacan, Philippines!\n The ideal candidate will have stong skils in Python, SQL, JavaScript/TypeScript, PHP and modern frameworks like Tailwind and Vue",
+        "location" : "San Jose Del Monte Bulacan, Philippines",
+        "salary" :  "50-70k pesos/month",
+        "company" : {
+            "name" : "SampleTechnologiesBusiness Softwares",
+            "description" : "A software development startup founded and based in the Philippines.",
+            "contactEmail" : "SampleBusinessTechnologiesContact@gmail.com",
+            "contactNumber" : "0912-345-6799"
+        }
+    },
+
+    {
+         "id": 4,
+        "title" : "Vue Native Developer",
+        "description" : "Join our team as a Vue Native Developer based in BGC, Philippines!\n We are looking for a skilled and enthusiastic individual who is exprience in Vue Development.",
+        "location" : "BGC, Philippines",
+        "salary" :  "45-55k pesos/month",
+        "company" : {
+            "name" : "SampleTechnologiesBusiness Softwares",
+            "description" : "A software development startup founded and based in the Philippines.",
+            "contactEmail" : "SampleBusinessTechnologiesContact@gmail.com",
+            "contactNumber" : "0912-345-6799"
+        }
+    }
+
+
+]
