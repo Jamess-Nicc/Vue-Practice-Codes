@@ -1,3 +1,28 @@
+# Vue-Practice-Codes 
+
+**A repository for applying practical vue techniques and codes that I have learned.**
+
+Vue-Practice-Codes is sort of my like sandbox for learning Vue and applying its concepts, techniques, and codes to help me get a better grasp of Vue as well as JavaScript and TypeScrpt.
+
+## Features
+- **navbar** --> A navigation bar at the top of the vue website with hover animations.
+- **hero-section** --> The main section of the website. It uses flex to stylize the formatting of the text and also uses props.
+
+## Tech Stack
+
+### Frontend
+- Vue.js
+- JavaScript
+- Tailwind CSS
+- Vite 
+
+
+
+
+
+
+
+
 # vue-crash-course
 
 This template should help get you started developing with Vue 3 in Vite.
