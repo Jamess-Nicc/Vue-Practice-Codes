@@ -1,4 +1,8 @@
 <script setup>
+/*This file creates the cards for both browse jobs and add job. This
+file contains an import from card.vue which has the dynamic design. 
+As you've noticed, there is a <card></card> syntax which uses card.vue's designs 
+to be inherit the design and behaviour of the children inside the card syntaxes. */
 import Card from "@/components/card.vue"
 </script>
 

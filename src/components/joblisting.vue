@@ -1,8 +1,29 @@
 <script setup>
-import { defineProps } from 'vue';
+/* This file  contains a script whereit imports defineProps for 
+using the jobs in jobs.json, ref for reactive codes in this file, and computed
+to use methods like substring. */
+import { defineProps, ref, computed } from 'vue';
 
-defineProps({
+const props = defineProps({
     job: Object
+});
+
+const showFullDescription = ref(false) //create a function called showFullDescripton with value of ref(false), use ref for reactivity.
+const toggleFullDescription = () => {
+    showFullDescription.value = !showFullDescription.value;
+} /* create a function called toggleFullDescription. We use an arrow function where it takes in showFullDescription.value (.value because we use ref)
+ and it will only active when it equates to NOT showFullDescription.value (which is the value in the truncatedDescription function, we just counteract it.) */
+
+const truncatedDescription = computed(() => {
+    let description = props.job.description;
+    if (!showFullDescription.value) {
+        description = description.substring(0, 90) + '...';
+    }
+    return description;  /*create a function called truncatedDescription where we use the computed module 
+    with an arrow function. Inside the function, we use a let statement for mutability. The let description takes 
+    props and gets the job description using dot notation and under it, an if statement where if NOT showFullDescription.value (use dot because ref)
+    then that that should output description where description has a method of substring where it has a word limit of 0-90 with 
+    a concatenation of "..." so that it shows an elipses right after the 90th character. Then we return the value of description after the if. */
 });
 </script>
 
@@ -15,7 +36,13 @@ defineProps({
             </div>
 
             <div class="mb-5">
-                {{ job.description }}
+                <div>
+                    {{ truncatedDescription }}
+                </div>
+                <button @click="toggleFullDescription" class="text-green-500 hover:text-green-600
+                mb-5">
+                    {{ showFullDescription ? 'Less' : 'More' }}
+                </button>
             </div>
 
             <h3 class="text-green-500 mb-2">{{ job.salary }}</h3>
